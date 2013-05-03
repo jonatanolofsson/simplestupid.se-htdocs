@@ -1,0 +1,13 @@
+skinparam componentStyle uml2
+skinparam component {
+  FontSize 10
+  FontName Courier
+  BorderColor black
+  ArrowFontName Impact
+}
+skinparam package {
+  FontSize 10
+  FontName Courier
+  BorderColor black
+  ArrowFontName Impact
+}

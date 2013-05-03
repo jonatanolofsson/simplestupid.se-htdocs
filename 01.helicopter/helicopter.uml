@@ -1,0 +1,18 @@
+@startuml
+!include uml.style
+left to right direction
+
+package "Main ECU" {
+    [Sensorhub] -> [Observer]
+    [Observer] -> [Main Controller]
+}
+
+package "Vision ECU" {
+    [PTAM] -> [Sensorhub]
+}
+
+package "MCU" {
+    [Main Controller] -> [Servo/Engine Control]
+    [IMU] -> [Sensorhub]
+}
+@enduml

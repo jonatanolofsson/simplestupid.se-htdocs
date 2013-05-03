@@ -1,0 +1,12 @@
+@startuml
+package "Main ECU Software" {
+    [Sensorhub] -> [Observer]
+    [Observer] -> [Main Controller]
+}
+
+package "Simulator" {
+    [Main Controller] -> [Dynamics Simulation]
+    [Dynamics Simulation] -> [Simulated Measurements]
+    [Simulated Measurements] -> [Sensorhub]
+}
+@enduml
