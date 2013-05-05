@@ -58,11 +58,11 @@ li ul, li ul {
 p, ul, ol {
     font-size: 16px;
     line-height: 24px;
-    max-width: 800px;
+    max-width: 768px;
 }
 pre {
     padding: 0px 24px;
-    max-width: 800px;
+    max-width: 768px;
     white-space: pre-wrap;
 }
 code {
