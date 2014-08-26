@@ -1,0 +1,22 @@
+@startuml
+!include ../../uml.style
+
+[*] -> Initialize
+
+state Initialize {
+    [*] -> PerformSelfTest
+    PerformSelfTest -> SampleSensorData : EvTestsPassed
+    SampleSensorData -> Idle
+}
+
+state Idle {
+}
+
+Idle -> Flying : EvGroundLockReleased
+
+state Flying {
+}
+
+
+
+@enduml

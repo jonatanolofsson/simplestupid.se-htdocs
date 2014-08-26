@@ -119,6 +119,12 @@ ol.menulevel1 a {
     font-size: 12px;
 }
 
+img.default {
+    float: left;
+    margin: 1em;
+    width: 350px;
+}
+
 img.uml {
     max-width: 100%;
 }
